@@ -81,6 +81,7 @@
 .recipe-details h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  color: black;
 }
 
 .recipe-details img {
@@ -94,6 +95,7 @@
 .recipe-details p {
   margin-bottom: 15px;
   font-family: "Playwrite AU QLD", cursive;
+  color: black;
 }
 
 .recipe-details ul,
@@ -101,6 +103,7 @@
   padding-left: 20px;
   margin-bottom: 15px;
   font-family: "Playwrite AU QLD", cursive;
+  color: black;
 }
 
 .recipe-details li {
@@ -139,9 +142,19 @@ h2 {
 h3 {
   text-align: center;
   font-family: "Playwrite VN", cursive;
+  color: black;
 }
 hr {
   border-color: #333;
   border-width: 1px;
   border-style: solid;
+}
+body {
+  background-color: #fff; /* Light mode background */
+  color: #333; /* Light mode text color */
+}
+
+.dark-mode {
+  background-color: #333; /* Dark mode background */
+  color: #fff; /* Dark mode text color */
 }

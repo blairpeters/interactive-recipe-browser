@@ -89,6 +89,12 @@ fetch(dataPath)
       recipeDetails.style.display = "none";
       recipeList.style.display = "block";
     };
+    const darkModeToggle = document.getElementById("dark-mode-toggle");
+    const body = document.body;
+
+    darkModeToggle.addEventListener("click", function () {
+      body.classList.toggle("dark-mode");
+    });
   })
   .catch((error) => {
     console.error("Error fetching recipes:", error);
