@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kalnia+Glaze:wght@100..700&family=Pacifico&family=Playwrite+MX:wght@100..400&display=swap");
-.recipe {
+#recipeList {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   list-style-type: none;
 }
-.recipe img {
+#recipeList img {
   width: 200px;
   height: 200px;
   justify-content: center;
@@ -65,4 +65,15 @@
   cursor: pointer;
   margin-bottom: 10px;
   list-style-type: none;
+}
+.recipe-details img {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.recipe-details title {
+  text-align: center;
 }
