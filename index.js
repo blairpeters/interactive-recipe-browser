@@ -34,6 +34,16 @@ fetch(apiUrl)
             <ol>${recipe.instructions
               .map((step) => `<li>${step}</li>`)
               .join("")}</ol>
+               ${
+                 recipe.video
+                   ? `
+          <h3>Video</h3>
+          <div class="video-container">
+            <iframe width="560" height="315" src="${recipe.video}" frameborder="0" allowfullscreen></iframe>
+          </div>
+        `
+                   : ""
+               }
             <span class="back-button" onclick="showRecipeList()">Back to recipes</span>
           `;
     }
