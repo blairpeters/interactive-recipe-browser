@@ -267,3 +267,70 @@ hr {
   color: rgb(58, 165, 201);
   margin-bottom: 10px;
 }
+
+/* Styles for screens smaller than 768px (mobile) */
+@media only screen and (max-width: 768px) {
+  /* Increase font size slightly for better readability on mobile */
+  body {
+    font-size: 0.9rem;
+  }
+
+  /* Make recipe title more prominent on mobile */
+  .recipe-title {
+    font-size: 1.5rem;
+  }
+
+  /* Adjust layout for single column on mobile */
+  .recipe-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Increase space between ingredients and instructions */
+  .recipe-ingredients,
+  .recipe-instructions {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Add expandable/collapsible sections for ingredients and instructions */
+  .recipe-ingredients ul,
+  .recipe-instructions ol {
+    display: none;
+  }
+
+  /* Style toggle button for expandable sections */
+  .recipe-ingredients:before,
+  .recipe-instructions:before {
+    content: "+";
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-weight: bold;
+  }
+
+  /* Show content of expandable sections when clicked */
+  .recipe-ingredients.active ul,
+  .recipe-instructions.active ol {
+    display: block;
+  }
+
+  /* Rotate toggle button symbol when section is expanded */
+  .recipe-ingredients.active:before,
+  .recipe-instructions.active:before {
+    content: "\u25BC"; /* down arrow symbol */
+  }
+}
+
+/* Optional: Styles for dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .recipe-title {
+  color: #ffcc00;
+}
+
+body.dark-mode .back-button {
+  color: #ffcc00;
+}
