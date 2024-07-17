@@ -30,7 +30,6 @@ fetch(dataPath)
     }
 
     //navbar event listener
-
     const searchInput = document.getElementById("searchInput");
     const searchButton = document.getElementById("searchButton");
 
@@ -73,7 +72,7 @@ fetch(dataPath)
           alert("Please input Recipe name");
         } else {
           //recipeList.innerHTML = "<p>No recipes found.</p>";
-          console.log("No Recipes found");
+          alert("No Recipes found");
         }
       }
     });
