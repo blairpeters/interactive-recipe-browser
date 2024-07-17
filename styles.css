@@ -292,9 +292,21 @@ hr {
     margin-bottom: 1.5rem;
   }
 
-  /* Add expandable/collapsible sections for ingredients and instructions */
-  .recipe-ingredients ul,
-  .recipe-instructions ol {
+  /* Navigation Menu (assuming you have a navigation bar) */
+  #recipeNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center navigation items horizontally */
+    margin-bottom: 1rem; /* Add some space below the navigation */
+  }
+
+  #recipeNav li {
+    margin-bottom: 0.5rem; /* Add some space between navigation items */
+  }
+
+  /* Expandable/collapsible sections */
+  .recipe-ingredients > *,
+  .recipe-instructions > * {
     display: none;
   }
 
@@ -309,8 +321,8 @@ hr {
   }
 
   /* Show content of expandable sections when clicked */
-  .recipe-ingredients.active ul,
-  .recipe-instructions.active ol {
+  .recipe-ingredients.active > *,
+  .recipe-instructions.active > * {
     display: block;
   }
 
@@ -319,18 +331,14 @@ hr {
   .recipe-instructions.active:before {
     content: "\u25BC"; /* down arrow symbol */
   }
-}
 
-/* Optional: Styles for dark mode */
-body.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
+  /* Image size and scaling */
+  .recipe-details img {
+    max-width: 100%; /* Ensure image scales to fit container width */
+  }
 
-body.dark-mode .recipe-title {
-  color: #ffcc00;
-}
-
-body.dark-mode .back-button {
-  color: #ffcc00;
+  /* List items (assuming you have a recipe list) */
+  .recipe-item {
+    padding: 0.75rem 1rem; /* Increase tap target size */
+  }
 }
