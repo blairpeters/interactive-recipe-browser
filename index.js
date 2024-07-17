@@ -73,7 +73,7 @@ fetch(dataPath)
           alert("Please input Recipe name");
         } else {
           //recipeList.innerHTML = "<p>No recipes found.</p>";
-          alert("No Recipes found");
+          console.log("No Recipes found");
         }
       }
     });
@@ -133,9 +133,8 @@ function zoomImage(img) {
   });
 }
 
-images
-  .forEach(zoomImage)
+images.forEach(zoomImage);
 
-  .catch((error) => {
-    console.error("Error fetching recipes:", error);
-  });
+// .catch((error) => {
+//   console.error("Error fetching recipes:", error);
+// });

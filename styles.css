@@ -171,3 +171,94 @@ body {
   transform: scale(1.1);
   opacity: 1;
 }
+.footer {
+  background-image: url("https://images.unsplash.com/photo-1625938395857-9cc28c63dbfd?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: row;
+}
+.footer h2 {
+  font-family: "Dancing Script", cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
+}
+.footer hr {
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: brown;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px auto;
+  border: 2px solid black;
+  padding: 20px;
+  max-width: 600px;
+  gap: 20px;
+  margin-left: 400px;
+}
+label {
+  margin-bottom: 5px;
+}
+.contact-inputs {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: blue;
+  border-radius: 50px;
+  background-color: black;
+  max-width: 100%;
+}
+.footer textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+  max-width: 100%;
+}
+.submit {
+  height: 25px;
+  width: 100px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  background-color: brown;
+}
+hr {
+  border: none;
+  height: 5px;
+  background-color: rgb(61, 13, 13);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+}
+#instagram {
+  color: palevioletred;
+  margin-bottom: 10px;
+}
+#facebook {
+  color: rgb(58, 165, 201);
+  margin-bottom: 10px;
+}
+#youtube {
+  color: red;
+  margin-bottom: 10px;
+}
+#linkedin {
+  color: rgb(58, 165, 201);
+  margin-bottom: 10px;
+}
