@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
   </head>
   <body>
     
@@ -16,18 +17,20 @@
         </button>
         
     </form>
-          <ul>
+    <Ul id="recipeNav">
+          <li>
             Quick Dinners
-          </ul>
-          <ul>
-            Side Dish
-          </ul>
-          <ul>
+          </li>
+          <li>
+            Side dish
+          </li>
+          <li>
             Quick Snacks
-          </ul>
-          <ul>
+          </li>
+          <li>
             Desserts
-          </ul>
+          </li>
+        </li>
           <button id="dark-mode-toggle">Toggle Dark Mode</button>
           
         </div>
@@ -45,7 +48,7 @@
 
           <img
             src="https://images.unsplash.com/photo-1484980972926-edee96e0960d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fGN1aXNpbmVzfGVufDB8fDB8fHww"
-            alt="salad" title="Top view salad with guacamole"
+            alt="salad" title="Top view salad with guacamole "  id="imageLink"
           />
         </div>
 
@@ -64,16 +67,28 @@
             <hr><h2>winner winner chicken dinner</h2>  <hr>
         <div class="chicken-images">
             <div>
-            <img src="https://plus.unsplash.com/premium_photo-1661419883163-bb4df1c10109?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGNoaWNrZW4lMjByZWNpcGVzfGVufDB8fDB8fHww" alt="chicken-dinner" title="Roasted chicken legs in pan with herbs">
-            <h3>Roasted chicken</h3>
+                <a href="https://www.missallieskitchen.com/chicken-legs/">
+            <img src="https://plus.unsplash.com/premium_photo-1661419883163-bb4df1c10109?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGNoaWNrZW4lMjByZWNpcGVzfGVufDB8fDB8fHww" alt="chicken-dinner" title="Roasted chicken legs in pan with herbs" class="zoom-effect">
+        </a>
+        <a href="https://www.missallieskitchen.com/chicken-legs/">
+            <h3 class="zoom-effect">Roasted chicken</h3>
+            </a>
             </div>
             <div>
-            <img src="https://images.unsplash.com/photo-1543340904-0b1d843bccda?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="chicken-dinner" title="decorated Honey mustard chicken on a plate ">
-          <h3>Honey mustard chicken</h3>
+                <a href="https://www.ambitiouskitchen.com/honey-mustard-chicken/">
+            <img src="https://images.unsplash.com/photo-1543340904-0b1d843bccda?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="chicken-dinner" title="decorated Honey mustard chicken on a plate " class="zoom-effect">
+        </a>
+        <a href="https://www.ambitiouskitchen.com/honey-mustard-chicken/">
+          <h3 class="zoom-effect">Honey mustard chicken</h3>
+          </a>
             </div>
             <div>
-            <img src="https://tastesbetterfromscratch.com/wp-content/uploads/2023/03/Chicken-Parmesan-1-724x1024.jpg" alt="chicken-parmesan" title="Chicken-parmesan a classic italian-american dish ">
-            <h3>Chicken Parmesan</h3>
+                <a href="https://www.delish.com/cooking/recipe-ideas/a51451/easy-chicken-parmesan-recipe/">
+            <img src="https://tastesbetterfromscratch.com/wp-content/uploads/2023/03/Chicken-Parmesan-1-724x1024.jpg" alt="chicken-parmesan" title="Chicken-parmesan a classic italian-american dish " class="zoom-effect">
+        </a>
+        <a href="https://www.delish.com/cooking/recipe-ideas/a51451/easy-chicken-parmesan-recipe/">
+            <h3 class="zoom-effect">Chicken Parmesan</h3>
+            </a>
             </div>
 
 
@@ -82,6 +97,6 @@
     </div>
 
     
-    <script src="index.js"></script>
+    
   </body>
 </html>
