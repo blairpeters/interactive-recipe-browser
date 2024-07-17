@@ -6,13 +6,31 @@ fetch(dataPath)
     const recipeList = document.getElementById("recipeList");
     const recipeDetails = document.getElementById("recipeDetails");
 
-    // Display initial recipes (optional)
+    // Display initial recipes
     // recipes.forEach((recipe) => {
     //   const recipeItem = document.createElement("li");
     //   recipeItem.classList.add("recipe-item");
     //   recipeItem.textContent = recipe.title;
     //   recipeList.appendChild(recipeItem);
     // });
+
+    //navbar event listener
+    const recipeNav = document.getElementById("recipeNav");
+    const listItems = recipeNav.querySelectorAll("li");
+
+    // Add click event listener to each list item
+    for (const item of listItems) {
+      item.addEventListener("click", function () {
+        const selectedCategory = this.textContent; // Get text content (category)
+        const filteredRecipes = recipes.filter(
+          (recipe) => recipe.category === selectedCategory
+        );
+        showRecipeDetails(filteredRecipes);
+      });
+    }
+
+    //navbar event listener
+
     const searchInput = document.getElementById("searchInput");
     const searchButton = document.getElementById("searchButton");
 
@@ -50,8 +68,12 @@ fetch(dataPath)
             );
             recipeList.appendChild(recipeItem);
           });
+        }
+        if ((recipeList.innerHTML = "")) {
+          alert("Please input Recipe name");
         } else {
-          recipeList.innerHTML = "<p>No recipes found.</p>";
+          //recipeList.innerHTML = "<p>No recipes found.</p>";
+          alert("No Recipes found");
         }
       }
     });
@@ -89,13 +111,31 @@ fetch(dataPath)
       recipeDetails.style.display = "none";
       recipeList.style.display = "block";
     };
+    //adds darkmode function when toggled
     const darkModeToggle = document.getElementById("dark-mode-toggle");
     const body = document.body;
 
     darkModeToggle.addEventListener("click", function () {
       body.classList.toggle("dark-mode");
     });
-  })
+  });
+
+//zooms the salad which is the first image of the website
+const images = document.querySelectorAll("#imageLink");
+
+function zoomImage(img) {
+  img.addEventListener("mouseover", () => {
+    img.style.transform = "scale(1.5)";
+  });
+
+  img.addEventListener("mouseout", () => {
+    img.style.transform = "scale(1)";
+  });
+}
+
+images
+  .forEach(zoomImage)
+
   .catch((error) => {
     console.error("Error fetching recipes:", error);
   });
