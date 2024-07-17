@@ -158,3 +158,16 @@ body {
   background-color: #333; /* Dark mode background */
   color: #fff; /* Dark mode text color */
 }
+#recipeNav {
+  display: flex;
+  flex-direction: row;
+}
+#recipeNav li {
+  margin: 10px;
+  list-style-type: none;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
