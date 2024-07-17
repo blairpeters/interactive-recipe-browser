@@ -14,7 +14,7 @@ It allows users to search for recipes based on keyword.Each recipe should provid
 - RAM space >= 4GB
 - Disk space >= 1GB
 
-## installation
+## installations
 
 1. Open your terminal/cli on your computer.
 2. Clone the repository by running the following command:
