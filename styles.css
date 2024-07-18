@@ -425,7 +425,6 @@ hr {
     flex-direction: column; /* Arrange icons horizontally */
     justify-content: center; /* Center align icons */
     gap: 10px; /* Space between icons */
-    color: inherit;
   }
 
   .icons a {
@@ -436,5 +435,6 @@ hr {
     height: 40px; /* Adjust height if necessary */
     text-align: center;
     font-size: 0; /* Remove any font size */
+    color: inherit;
   }
 }
