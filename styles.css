@@ -274,100 +274,125 @@ hr {
   color: rgb(58, 165, 201);
   margin-bottom: 10px;
 }
-
-/* Media queries for responsive design */
-@media (max-width: 768px) {
-  #format {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #movie-details,
-  #film-wrapper {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  #buy-ticket {
-    width: 100%;
-    padding: 15px;
-  }
-}
-
-/* Media Queries for Tablet */
-@media only screen and (max-width: 1024px) {
-  .recipe-item {
-    width: 45%;
-  }
-
-  .chicken-images {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .chicken-images div {
-    width: 100%;
-  }
-
-  .footer .icons {
-    flex-direction: row;
-    gap: 1rem;
-  }
-}
-
-/* Media Queries for Mobile */
-@media only screen and (max-width: 768px) {
+/* Styles for tablets */
+@media (max-width: 1024px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .search-container {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-
-  #searchInput {
-    width: 100%;
-    margin-bottom: 0.5rem;
-  }
-
-  #searchButton {
-    width: 100%;
-    border-radius: 5px;
-  }
-
-  #recipeNav {
+  .navbar ul {
     flex-direction: column;
+    align-items: flex-start;
     gap: 0.5rem;
-    width: 100%;
   }
 
-  #recipeList .recipe-item {
-    width: 100%;
+  .welcome {
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .website-name p {
+    margin: 0;
+  }
+
+  .footer-section {
+    margin: 0 auto;
   }
 
   .chicken-images {
     flex-direction: column;
-    gap: 1rem;
-    width: 200px;
-    height: 200px;
   }
 
-  .chicken-images div {
+  .chicken-images img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-inputs {
     width: 100%;
   }
+}
 
-  .footer .icons {
+/* Styles for phones */
+@media (max-width: 768px) {
+  .navbar {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
     gap: 0.5rem;
   }
 
-  .footer .contact-inputs {
-    width: calc(100% - 2rem);
+  .welcome {
+    padding: 1rem;
+    margin: 0;
   }
 
-  .footer .submit {
-    width: calc(100% - 2rem);
+  .website-name p {
+    margin: 0;
+  }
+
+  .footer-section {
+    margin: 0 auto;
+  }
+
+  .chicken-images {
+    flex-direction: column;
+  }
+
+  .chicken-images img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-inputs {
+    width: 100%;
+  }
+  .footer-section {
+    flex-direction: column;
+  }
+}
+
+/* Additional styles for very small screens */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .welcome {
+    padding: 0.5rem;
+    margin: 0;
+  }
+
+  .website-name p {
+    margin: 0;
+  }
+
+  .footer-section {
+    margin: 0 auto;
+  }
+
+  .chicken-images {
+    flex-direction: column;
+  }
+
+  .chicken-images img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-inputs {
+    width: 100%;
   }
 }
