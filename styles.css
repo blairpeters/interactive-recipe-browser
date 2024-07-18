@@ -425,6 +425,7 @@ hr {
     flex-direction: column; /* Arrange icons horizontally */
     justify-content: center; /* Center align icons */
     gap: 10px; /* Space between icons */
+    background-color: blue;
   }
 
   .icons a {
@@ -435,21 +436,5 @@ hr {
     height: 40px; /* Adjust height if necessary */
     text-align: center;
     font-size: 0; /* Remove any font size */
-  }
-  #instagram {
-    color: palevioletred;
-    margin-bottom: 10px;
-  }
-  #facebook {
-    color: rgb(58, 165, 201);
-    margin-bottom: 10px;
-  }
-  #youtube {
-    color: red;
-    margin-bottom: 10px;
-  }
-  #linkedin {
-    color: rgb(58, 165, 201);
-    margin-bottom: 10px;
   }
 }
