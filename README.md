@@ -27,7 +27,7 @@ It allows users to search for recipes based on keyword.Each recipe should provid
 2. visit the following deployed links
 
 front end:(https://interactive-recipe-browser.vercel.app/)
-server: (https://canvas-recipe-website-adhf.vercel.app/recipes)
+server: (https://vercel.com/blair-peters-projects/canvas-recipe-database)
 
 ## Author
 
