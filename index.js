@@ -1,4 +1,4 @@
-const apiUrl = "http://localhost:3000/recipes";
+const apiUrl = "https://canvas-recipe-database.vercel.app/recipes";
 
 fetch(apiUrl)
   .then((response) => response.json())
