@@ -395,4 +395,8 @@ hr {
   .contact-inputs {
     width: 100%;
   }
+  #recipeList video {
+    width: 100%;
+    height: auto;
+  }
 }
