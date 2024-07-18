@@ -258,6 +258,10 @@ hr {
   display: flex;
   flex-direction: column;
 }
+.icons a {
+  margin-left: 50px;
+  margin-right: 10px;
+}
 #instagram {
   color: palevioletred;
   margin-bottom: 10px;
@@ -274,6 +278,10 @@ hr {
   color: rgb(58, 165, 201);
   margin-bottom: 10px;
 }
+#follow {
+  color: red;
+}
+
 .recipe-details .video-container {
   width: 100%; /* Stretch video container to full width */
   margin-bottom: 15px;
