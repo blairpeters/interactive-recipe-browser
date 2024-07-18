@@ -274,6 +274,20 @@ hr {
   color: rgb(58, 165, 201);
   margin-bottom: 10px;
 }
+.recipe-details .video-container {
+  width: 100%; /* Stretch video container to full width */
+  margin-bottom: 15px;
+  position: relative;
+  padding-bottom: 56.25%; /* Aspect ratio for 16:9 video */
+}
+
+.recipe-details .video-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
 /* Styles for tablets */
 @media (max-width: 1024px) {
   .navbar {
