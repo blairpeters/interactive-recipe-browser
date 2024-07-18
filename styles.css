@@ -425,7 +425,7 @@ hr {
     flex-direction: column; /* Arrange icons horizontally */
     justify-content: center; /* Center align icons */
     gap: 10px; /* Space between icons */
-    color: blue;
+    color: inherit;
   }
 
   .icons a {
