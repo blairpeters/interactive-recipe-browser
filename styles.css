@@ -258,10 +258,7 @@ hr {
   display: flex;
   flex-direction: column;
 }
-.icons a {
-  margin-left: 50px;
-  margin-right: 10px;
-}
+
 #instagram {
   color: palevioletred;
   margin-bottom: 10px;
