@@ -370,8 +370,4 @@ hr {
   .footer .submit {
     width: calc(100% - 2rem);
   }
-  .footer {
-    display: flex;
-    flex-direction: column;
-  }
 }
