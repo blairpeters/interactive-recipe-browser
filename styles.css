@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Playwrite+AU+QLD:wght@100..400&family=Playwrite+VN:wght@100..400&display=swap");
+body {
+  max-width: 100%;
+}
 #recipeList {
   display: flex;
   flex-direction: row;
@@ -20,6 +23,7 @@
   margin-left: 150px;
   margin-right: 150px;
   margin-bottom: 150px;
+  max-width: 100%;
 }
 .welcome img {
   width: 500px;
@@ -68,6 +72,7 @@
   margin-bottom: 10px;
   list-style-type: none;
   font-family: "Dancing Script", cursive;
+  max-width: 100%;
 }
 .recipe-details {
   background-color: #f5f5f5;
@@ -129,6 +134,7 @@
 .chicken-images {
   display: flex;
   flex-direction: row;
+  max-width: 100%;
 }
 .chicken-images img {
   width: 400px;
@@ -182,6 +188,7 @@ body {
   padding: 100px 0;
   display: flex;
   flex-direction: row;
+  max-width: 100%;
 }
 .footer h2 {
   font-family: "Dancing Script", cursive;
@@ -268,77 +275,97 @@ hr {
   margin-bottom: 10px;
 }
 
-/* Styles for screens smaller than 768px (mobile) */
-@media only screen and (max-width: 768px) {
-  /* Increase font size slightly for better readability on mobile */
-  body {
-    font-size: 0.9rem;
-  }
-
-  /* Make recipe title more prominent on mobile */
-  .recipe-title {
-    font-size: 1.5rem;
-  }
-
-  /* Adjust layout for single column on mobile */
-  .recipe-container {
-    display: flex;
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  #format {
     flex-direction: column;
+    align-items: center;
   }
 
-  /* Increase space between ingredients and instructions */
-  .recipe-ingredients,
-  .recipe-instructions {
-    margin-bottom: 1.5rem;
+  #movie-details,
+  #film-wrapper {
+    width: 100%;
+    margin: 10px 0;
   }
 
-  /* Navigation Menu (assuming you have a navigation bar) */
-  #recipeNav {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center navigation items horizontally */
-    margin-bottom: 1rem; /* Add some space below the navigation */
+  #buy-ticket {
+    width: 100%;
+    padding: 15px;
   }
+}
 
-  #recipeNav li {
-    margin-bottom: 0.5rem; /* Add some space between navigation items */
-  }
-
-  /* Expandable/collapsible sections */
-  .recipe-ingredients > *,
-  .recipe-instructions > * {
-    display: none;
-  }
-
-  /* Style toggle button for expandable sections */
-  .recipe-ingredients:before,
-  .recipe-instructions:before {
-    content: "+";
-    display: block;
-    cursor: pointer;
-    padding: 0.5rem;
-    font-weight: bold;
-  }
-
-  /* Show content of expandable sections when clicked */
-  .recipe-ingredients.active > *,
-  .recipe-instructions.active > * {
-    display: block;
-  }
-
-  /* Rotate toggle button symbol when section is expanded */
-  .recipe-ingredients.active:before,
-  .recipe-instructions.active:before {
-    content: "\u25BC"; /* down arrow symbol */
-  }
-
-  /* Image size and scaling */
-  .recipe-details img {
-    max-width: 100%; /* Ensure image scales to fit container width */
-  }
-
-  /* List items (assuming you have a recipe list) */
+/* Media Queries for Tablet */
+@media only screen and (max-width: 1024px) {
   .recipe-item {
-    padding: 0.75rem 1rem; /* Increase tap target size */
+    width: 45%;
+  }
+
+  .chicken-images {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .chicken-images div {
+    width: 100%;
+  }
+
+  .footer .icons {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+/* Media Queries for Mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-container {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  #searchInput {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  #searchButton {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  #recipeNav {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  #recipeList .recipe-item {
+    width: 100%;
+  }
+
+  .chicken-images {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .chicken-images div {
+    width: 100%;
+  }
+
+  .footer .icons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer .contact-inputs {
+    width: calc(100% - 2rem);
+  }
+
+  .footer .submit {
+    width: calc(100% - 2rem);
   }
 }
