@@ -350,6 +350,8 @@ hr {
   .chicken-images {
     flex-direction: column;
     gap: 1rem;
+    width: 200px;
+    height: 200px;
   }
 
   .chicken-images div {
@@ -367,5 +369,9 @@ hr {
 
   .footer .submit {
     width: calc(100% - 2rem);
+  }
+  .footer div {
+    display: flex;
+    flex-direction: column;
   }
 }
