@@ -1,6 +1,6 @@
-const dataPath = "http://localhost:3000/recipes";
+const apiUrl = "http://localhost:3000/recipes";
 
-fetch(dataPath)
+fetch(apiUrl)
   .then((response) => response.json())
   .then((recipes) => {
     const recipeList = document.getElementById("recipeList");
