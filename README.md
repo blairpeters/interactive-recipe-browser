@@ -3,7 +3,7 @@
 ## Description
 
 Provides a user-friendly platform for exploring and discovering recipes.
-It allows users to search for recipes based on the item name.eg Pancake,beef tacos etc .Each recipe should provide clear and concise information, including ingredients list, instructions, an image of the dish served on a plate, and a video tutorial all retrieved from the db.json server.
+It allows users to search for recipes based on the item name and press enter key.eg Pancake,beef tacos etc .Each recipe should provide clear and concise information, including ingredients list, instructions, an image of the dish served on a plate, and a video tutorial all retrieved from the db.json server.
 
 ## system requirements
 
