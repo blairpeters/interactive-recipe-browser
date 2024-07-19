@@ -14,6 +14,41 @@ fetch(apiUrl)
     //   recipeList.appendChild(recipeItem);
     // });
 
+    //navbar content start
+
+    //   const navListItems = document.querySelector("#recipeNav");
+    //   navListItems.forEach((item) => {
+    //     item.addEventListener("click", function () {
+    //       let wrapper = document.getElementById("#navbarContent");
+    //       const divCard = document.createElement("div");
+    //       divCard.className = "navbar-content";
+    //       const html = `
+    // <div>
+    // img src=${recipes.image}
+    // </div>
+    // <div>
+    // <h3>${recipes.title}</h3>
+    // </div>
+
+    // `;
+    //       divCard.innerHTML = html;
+    //       wrapper.appendChild(divCard);
+    //     });
+    //   });
+
+    // Select the unordered list element with the id "recipeNav"
+    const recipesList = document.getElementById("recipeNav");
+
+    // Add a click event listener to the recipeList element
+    recipesList.addEventListener("click", function (event) {
+      // Check if the clicked element is a list item (<li>)
+      if (event.target.tagName === "LI") {
+        alert("Yet to be added to the database");
+      }
+    });
+
+    //navbarcontent end
+
     //navbar event listener
     const recipeNav = document.getElementById("recipeNav");
     const listItems = recipeNav.querySelectorAll("li");
